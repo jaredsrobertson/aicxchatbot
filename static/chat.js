@@ -2,7 +2,7 @@
 
 (() => {
   // Configuration constants
-  const API_BASE = window.location.origin;
+  const API_BASE = "https://aicxchatbot.onrender.com";
   const BOT_DELAY = 500; // Delay in ms before executing bot callbacks
 
   // Generate or retrieve session ID to maintain conversation state
