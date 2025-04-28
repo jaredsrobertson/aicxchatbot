@@ -7,6 +7,7 @@ import os
 import json
 import logging
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 from dotenv import load_dotenv
 from google.cloud import dialogflow_v2 as dialogflow
 from openai import OpenAI
@@ -39,6 +40,7 @@ def create_app():
         static_folder='static',
         static_url_path=''
     )
+    CORS(app, resources={r"/dialogflow": {"origins": "*"}})
 
     @app.route('/')
     def index():

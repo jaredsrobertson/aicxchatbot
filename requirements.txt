@@ -5,3 +5,4 @@ python-dotenv==1.1.0
 gunicorn
 google-cloud-dialogflow
 google-auth>=2.0.0
+flask-cors
