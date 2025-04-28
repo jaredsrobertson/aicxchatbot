@@ -1,0 +1,106 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI CX Chatbot Demo showcasing Dialogflow and OpenAI integration with vanilla JavaScript." />
+  <title>AI CX Chatbot Demo</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/chat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">CX Assistant</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#technical">Technical</a></li>
+          <li><button class="nav-cta" id="nav-cta">Try It Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="wave-bg">
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>AI-Powered CX Chatbot</h1>
+        <p class="hero-subtitle">Transform your customer experience with intelligent conversation</p>
+        <div class="hero-cta">
+          <button class="primary-btn" id="hero-try">Try It Now</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="section-container">
+    <div class="container">
+      <div class="card">
+        <h2>About This Demo</h2>
+        <p class="project-desc">A lightweight AI CX chatbot demonstrating Dialogflow CX intents with GPT-4o fallback. Built with Python Flask, vanilla JavaScript, and modular CSS. Features pre-chat user capture, in-chat modal forms, quick-replies, session logging, and easy deployment.</p>
+        <ul class="feature-list">
+          <li>Pre-chat user info capture</li>
+          <li>Dialogflow CX intents + GPT-4o fallback</li>
+          <li>In-chat modal forms for support & sales</li>
+          <li>Quick replies & momentary bot pauses</li>
+          <li>Session logging & analytics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intent Flow Diagram Placeholder -->
+  <section id="flow" class="section-container alt-bg">
+    <div class="container">
+      <div class="card">
+        <h2>Intent Flow Diagram</h2>
+        <div class="diagram-placeholder">[Your intent flow diagram here]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical -->
+  <section id="technical" class="section-container">
+    <div class="container">
+      <div class="card tech-grid">
+        <div>
+          <h3>Backend</h3>
+          <p>Python Flask webhook + OpenAI GPT-4o classification</p>
+        </div>
+        <div>
+          <h3>Frontend</h3>
+          <p>Vanilla JS, modular CSS, lightweight & responsive</p>
+        </div>
+        <div>
+          <h3>UI</h3>
+          <p>Chat bubbles, modals, rating UI—all separated in chat.css</p>
+        </div>
+        <div>
+          <h3>Deploy</h3>
+          <p>Container-ready; files under 300 lines each</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat Widget -->
+  <div id="chat-container">
+    <div class="chat-icon-wrapper" id="chat-launcher">
+      <div id="chat-icon-text" class="chat-text">Chat with our AI assistant!</div>
+      <div class="chat-icon"><i class="fas fa-comment fa-2x"></i></div>
+    </div>
+    <div class="chatbox-wrapper" id="chatbox">
+      <div id="chatbox-container"></div>
+    </div>
+  </div>
+
+  <script src="/chat.js"></script>
+</body>
+</html>
